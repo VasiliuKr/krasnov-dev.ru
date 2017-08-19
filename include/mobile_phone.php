@@ -1,0 +1,1 @@
+<i class="fa fa-phone"></i>&nbsp;&nbsp; <b>+7 (351) 777 - 19 - 19</b>

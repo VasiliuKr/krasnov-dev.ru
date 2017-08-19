@@ -1,0 +1,27 @@
+.bxr-section-desc {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+span.bxr-font-hover-light-span {
+    cursor: default;
+}
+
+span.bxr-offer-img-in-list.fancybox-Y {
+    cursor: pointer;
+}
+
+.section__info_top {
+	margin-bottom: 20px;
+}
+.section__info_top:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+.section__info_top img {
+	float: left;
+	margin-right: 20px;
+}
+
