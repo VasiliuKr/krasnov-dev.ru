@@ -43,8 +43,30 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i> 
+									<?$APPLICATION->IncludeComponent(
+										"bitrix:main.include",
+										"",
+										Array(
+											"AREA_FILE_SHOW" => "file",
+											"AREA_FILE_SUFFIX" => "inc",
+											"EDIT_TEMPLATE" => "",
+											"PATH" => SITE_TEMPLATE_PATH."/include_areas/phone.php"
+										)
+									);?>
+									</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i>
+									<?$APPLICATION->IncludeComponent(
+										"bitrix:main.include",
+										"",
+										Array(
+											"AREA_FILE_SHOW" => "file",
+											"AREA_FILE_SUFFIX" => "inc",
+											"EDIT_TEMPLATE" => "",
+											"PATH" => SITE_TEMPLATE_PATH."/include_areas/email.php"
+										)
+									);?>
+									</a></li>
 							</ul>
 						</div>
 					</div>
@@ -68,7 +90,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="<?=SITE_TEMPLATE_PATH?>/images/home/logo.png" alt="" /></a>
+							<a href="/"><img src="<?=SITE_TEMPLATE_PATH?>/images/home/logo.png" alt="" /></a>
 						</div>
 						<div class="btn-group pull-right">
 							<div class="btn-group">
